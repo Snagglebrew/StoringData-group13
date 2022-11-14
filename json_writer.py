@@ -11,7 +11,7 @@ def dict_list_to_json(dict_list, filename):
     with open(filename, "w") as file:
         # TODO: Use the correct function to write the list of dictionaries to a json file
         # - set the indent to 4
-        json_string = None  # Replace None with the correct function
+        json_string = dumps(dict_list, indent=4)
         file.write(json_string)
 
 
